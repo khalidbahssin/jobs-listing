@@ -35,7 +35,7 @@ const Job = (props) => {
 
 
     return (
-        <div className="job-container">
+        <div className={featured? "job-container job-container--borderLeft": "job-container"}>
             <div className="logo">
                 <img src={icon} alt="" />
 
@@ -43,9 +43,9 @@ const Job = (props) => {
             <div className="part1">
 
                 <div className="company">
-                    <div className="cname">
+                    <span className="cname">
                         {company}
-                    </div>
+                    </span>
                     {props.data.new && <span className="new">new!</span>}
                     {props.data.featured && <span className="featured">featured</span>}
                 </div>
@@ -53,7 +53,9 @@ const Job = (props) => {
                 <div className="position">{position}</div>
                 <div className="details">
                     <span>{postedAt}</span>
+                    <span>&nbsp;-&nbsp;</span>
                     <span>{contract}</span>
+                    <span>&nbsp;-&nbsp;</span>
                     <span>{location}</span>
                 </div>
             </div>
