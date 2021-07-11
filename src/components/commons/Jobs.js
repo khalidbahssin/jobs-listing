@@ -38,7 +38,7 @@ const Jobs = ({ data, setkeywords, keywords }) => {
     return (
 
         <div className="jobs">
-            {data.map((d) => {
+            {filterData.map((d) => {
 
                 return <Job key={d.id} data={d} setkeywords={setkeywords} />
 
