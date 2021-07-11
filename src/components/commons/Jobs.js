@@ -14,8 +14,8 @@ const Jobs = ({ data, setkeywords, keywords }) => {
                 return keywords.every(key => {
 
                     return (
-                        d.role == key ||
-                        d.level == key ||
+                        d.role === key ||
+                        d.level === key ||
                         d.languages.includes(key) ||
                         d.tools.includes(key)
 
