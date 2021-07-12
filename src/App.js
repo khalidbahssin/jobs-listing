@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import data from './data.json';
-import Jobs from './components/commons/Jobs';
-import Header from './components/commons/Header';
+import Jobs from './components/Jobs';
+import Header from './components/Header';
 
 function App() {
 
